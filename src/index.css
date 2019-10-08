@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(31, 31, 31);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.celebrity-img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+}
+
+tr {
+  cursor: pointer;
+}
+.active-name {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #425cbb;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+.navbar__link.active {
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 10px;
 }
